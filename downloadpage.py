@@ -42,7 +42,7 @@ def downloadPage(kategori, tgl_akhir, bulan, tahun):
                     with open(os.path.join("downloaded/kategori_2",f"{namaFile}"),"w") as file:
                         file.write(req_berita.text)
                 else:# error jika code status tidak 200
-                    print(f"Gagal utnuk mendownload. Error : {response.status_code}")
+                    print(f"Gagal utnuk mendownload. Error : {req_berita.status_code}")
             # pemberitahuan jika berita pada page tertentu telah semua di download
             print(f"page {page} Done!")
             page += 1 #lanjut page selanjutnya
@@ -51,4 +51,4 @@ def downloadPage(kategori, tgl_akhir, bulan, tahun):
         tgl += 1 #lajut tanggal selanjutnya
 
 
-downloadPage("properti", 31, 3, 2024)
+downloadPage("properti", 30, 9, 2023)

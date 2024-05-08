@@ -31,7 +31,7 @@ my $fileout = basename($file);
 print "fileout: [$fileout]\n";
 
 # Directory where clean data are stored, its better to set this in config file
-my $PATHCLEAN = "/home/zlkhyr/Desktop/twm4/downloaded/clean";
+my $PATHCLEAN = "/home/zlkhyr/Desktop/twm4/clean_data/kategori_2/train";
 
 $fileout = "$PATHCLEAN/" . $fileout . ".clean.dat";
 print "$fileout\n";

@@ -11,8 +11,8 @@ use lib '../lib';
 use Lingua::EN::Bigram;
 use strict;
 
-my $PATH = "/home/zlkhyr/Desktop/twm4/kamus/kategori_2";
-open TOFILE, "> $PATH/properti_2grams.txt" or die "Cannot Open File!!!";
+my $PATH = "/home/zlkhyr/Desktop/twm4/kamus";
+open TOFILE, ">> $PATH/property_2grams.txt" or die "Cannot Open File!!!";
 
 my %stopwords;
 
@@ -84,5 +84,3 @@ sub load_stopwords
     }
   }  
 }
-
-  
